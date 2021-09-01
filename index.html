@@ -2,20 +2,49 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>ゆーブロTOP</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ユーTの振り向きTOP</title>
   </head>
 
   <body>
+    <div id="content">
     <div id="header">
-      <h1><a href="index.html">ゆーブロ</a></h1>
+      <h1><a href="index.html">ユーTの振り向き</a></h1>
       <p id="subtitle">旅行や日常の備忘録</p>
     </div>
-    <div id="content">
       <div id="main">
+        <div class="komidashi"><h3>最新記事</h3></div>
         <div class="midashi">
           <h2><span class="kiji"><a href="2021.8.31.html">サンライズ出雲に乗ってみた</a></span></h2>
           <p class="date">2021.8.31</p>
         </div>
+        <div class="komidashi"><h3>Uターンって何者？</h3></div>
+        <p>Uターン。それは知る人ぞ知る平凡な男子高校生です。基本ブログも平凡。だって備忘録だもん。妥協してもいいでしょ？</p>
+        <div class="komidashi"><h3>Uターンのデータ</h3></div>
+        <google-sheets-html-origin>
+  <table>
+    <tr>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;いくつ？&quot;}">いくつ？</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;愛知万博の年に生まれた&quot;}">愛知万博の年に生まれた</td>
+    </tr>
+    <tr>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;身長は？&quot;}">身長は？</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Ｍサイズ&quot;}">Ｍサイズ</td>
+    </tr>
+    <tr>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;体重は？&quot;}">体重は？</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Ｓサイズ&quot;}">Ｓサイズ</td>
+    </tr>
+    <tr>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;どこ住み？&quot;}">どこ住み？</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;そんなん、、ホームless((&quot;}">そんなん、、ホームless((</td>
+    </tr>
+    <tr>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;職業は？&quot;}">職業は？</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;高校生&quot;}">高校生</td>
+    </tr>
+  </table></google-sheets-html-origin>
+
       </div>
       <div id="rightmanu">
         <div id="sub">
@@ -26,6 +55,9 @@
         </ul>
        </div>
       </div>
+      <div id="footer">
+        <div id="footertext">🄫U-T</div>
+      </div>
     </div>
   </body>
 
@@ -33,7 +65,8 @@
   body{
    /* width: 1000px;*/
     background: whitesmoke;
-  }
+    font-family: 'メイリオ', Meiryo,'ヒラギノ角ゴシック','Hiragino Sans',sans-serif; 
+     }
   #header{
     margin: 0;
     padding-bottom: 10px;
@@ -64,9 +97,19 @@
     margin-top: 20px;
   }
   .midashi{
-    margin: 20px 10px;
+    margin: 20px 10px 80px 10px;
     border: solid 1px lightgray;
   }
+    .komidashi{
+      padding-left: 2%;
+      border-left: solid 10px lightgreen;
+      border-bottom: solid 2px lightgreen;
+      font-size: 25px;
+    }
+        h3{
+      margin-bottom: 0;
+    }
+
   .kiji a{
     text-decoration-line: none;
     color: black;
@@ -83,5 +126,17 @@
   #sub{
     margin-left: 10px;
   }
+  #footer{
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: lightgreen;
+  }
+  #footertext{
+  text-align: center;  
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
   </style>
+
 
