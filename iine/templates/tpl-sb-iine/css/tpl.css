@@ -1,0 +1,105 @@
+/* btn */
+.%css-ctar% .aiin-btn {
+	position:relative;
+	display:inline-block;
+	color:#080;
+	background-color:#fff;
+	border-style:solid;
+	border-color:#080;
+	border-width:1px;
+	border-radius:3px;
+	overflow:hidden;
+	cursor:pointer;
+	user-select:none;
+	-moz-user-select:none;
+	-webkit-tap-highlight-color:transparent;
+	line-height:1;
+	transition:color 0.5s;
+}
+.%css-ctar% .aiin-btn.aiin-sel {
+	color:#fff;
+}
+.%css-ctar% .aiin-btn.aiin-not-allowed {
+	cursor:default;
+}
+/* btn-inner */
+.%css-ctar% .aiin-btn-inner {
+	position:relative;
+	display:table;
+	border-collapse:separate;
+	border-spacing:5px 5px;
+}
+/* tcell */
+.%css-ctar% .aiin-tcell {
+	display:table-cell;
+	vertical-align:middle;
+}
+.%css-ctar% .aiin-tcell:first-child {
+	padding-left:5px;
+}
+.%css-ctar% .aiin-tcell:last-child {
+	padding-right:5px;
+}
+/* btn-bg */
+.%css-ctar% .aiin-btn-bg {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:0;
+	background-color:#080;
+	opacity:0.5;
+	transition:height 0.6s, opacity 0.6s;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-btn-bg {
+	height:100%;
+	opacity:1;
+}
+/* label & vcnt */
+.%css-ctar% .aiin-label,
+.%css-ctar% .aiin-label2,
+.%css-ctar% .aiin-vcnt {
+	font-size:14px;
+}
+/* vcnt */
+.%css-ctar% .aiin-vcnt {
+	text-align:right;
+	min-width:15px;
+}
+/* label */
+.%css-ctar% .aiin-hand-l,
+.%css-ctar% .aiin-hand-r,
+.%css-ctar% .aiin-label2 {
+	display:inline-block;
+}
+.%css-ctar% .aiin-btn:hover .aiin-hand-l,
+.%css-ctar% .aiin-btn.aiin-sel .aiin-hand-l,
+.%css-ctar% .aiin-btn:hover .aiin-hand-r,
+.%css-ctar% .aiin-btn.aiin-sel .aiin-hand-r {
+	animation-name:%css-ctar%-kf-hand-hover;
+	animation-iteration-count:3;
+	animation-duration:.5s;
+}
+@keyframes %css-ctar%-kf-hand-hover {
+	50% {
+		transform:translate(2px,0);
+	}
+}
+.%css-ctar% .aiin-btn.aiin-sel.aiin-init .aiin-hand-l,
+.%css-ctar% .aiin-btn.aiin-sel.aiin-init .aiin-hand-r {
+	animation:none;
+}
+.%css-ctar% .aiin-btn:hover .aiin-label2,
+.%css-ctar% .aiin-btn.aiin-sel .aiin-label2 {
+	animation-name:%css-ctar%-kf-label2-hover;
+	animation-iteration-count:3;
+	animation-duration:.5s;
+}
+@keyframes %css-ctar%-kf-label2-hover {
+	50% {
+		transform:rotateZ(20deg) scale(1.1);
+	}
+}
+.%css-ctar% .aiin-btn.aiin-sel.aiin-init .aiin-label2 {
+	animation:none;
+}

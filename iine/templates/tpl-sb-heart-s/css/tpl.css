@@ -1,0 +1,70 @@
+/* btn */
+.%css-ctar% .aiin-btn {
+	position:relative;
+	display:table;
+	border-collapse:separate;
+	border-spacing:5px 3px;
+	color:#888;
+	cursor:pointer;
+	user-select:none;
+	-moz-user-select:none;
+	-webkit-tap-highlight-color:transparent;
+	line-height:1;
+}
+.%css-ctar% .aiin-btn.aiin-sel {
+	color:#444;
+}
+.%css-ctar% .aiin-btn.aiin-not-allowed {
+	cursor:default;
+}
+/* tcell */
+.%css-ctar% .aiin-tcell {
+	display:table-cell;
+	vertical-align:middle;
+}
+/* vcnt */
+.%css-ctar% .aiin-vcnt {
+	font-size:14px;
+	text-align:right;
+	min-width:15px;
+}
+/* icon */
+.%css-ctar% .aiin-icon {
+	position:relative;
+	top:1px;
+}
+.%css-ctar% .aiin-icon,
+.%css-ctar% .aiin-icon-off,
+.%css-ctar% .aiin-icon-on {
+	width:16px;
+	height:16px;
+}
+.%css-ctar% .aiin-icon-off {
+	position:relative;
+	background:url("%url-tpl%img/icon-off.png");
+	background-size:100% 100%;
+}
+.%css-ctar% .aiin-icon-on {
+	position:absolute;
+	top:0;
+	left:0;
+	background:url("%url-tpl%img/icon-on.png");
+	background-size:100% 100%;
+	opacity:0;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-icon-on {
+	opacity:1;
+}
+.%css-ctar% .aiin-btn:hover .aiin-icon-on {
+	animation-name:%css-ctar%-kf-icon-on-hover;
+	animation-iteration-count:1;
+	animation-duration:1s;
+}
+@keyframes %css-ctar%-kf-icon-on-hover {
+	0% {
+		opacity:1;
+	}
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-icon-on {
+	animation:none;
+}

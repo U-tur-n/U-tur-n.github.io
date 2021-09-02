@@ -1,0 +1,298 @@
+/* btn */
+.%css-ctar% .aiin-btn {
+	position:relative;
+	display:inline-block;
+	cursor:pointer;
+	user-select:none;
+	-moz-user-select:none;
+	-webkit-tap-highlight-color:transparent;
+	line-height:0;
+}
+/* reldiv */
+.%css-ctar% .aiin-reldiv1 {
+	position:relative;
+	width:120px;
+	height:60px;
+}
+/* wheel */
+.%css-ctar% .aiin-wheel1-view {
+	position:relative;
+	width:120px;
+	height:60px;
+	overflow:hidden;
+	border-style:solid;
+	border-width:0 0 1px 0;
+	border-color:#2ecc71;
+}
+.%css-ctar% .aiin-btn:hover .aiin-wheel1-view {
+	animation-name:%css-ctar%-kf-wheel1-view-hover;
+	animation-iteration-count:1;
+	animation-duration:2s;
+}
+@keyframes %css-ctar%-kf-wheel1-view-hover {
+	0% {
+		border-color:#2ecc71;
+	}
+	20% {
+		border-color:#66dc98;
+		animation-timing-function:ease-in;
+	}
+	100% {
+		border-color:#2ecc71;
+	}
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-wheel1-view {
+	animation-name:%css-ctar%-kf-wheel1-view-sel;
+	animation-iteration-count:1;
+	animation-duration:3s;
+}
+@keyframes %css-ctar%-kf-wheel1-view-sel {
+	0% {
+		border-color:#2ecc71;
+	}
+	20% {
+		border-color:#8be0af;
+		animation-timing-function:ease-in;
+	}
+	100% {
+		border-color:#2ecc71;
+	}
+}
+.%css-ctar% .aiin-btn.aiin-init.aiin-sel .aiin-wheel1-view {
+	animation-delay:-100000s;
+}
+.%css-ctar% .aiin-wheel1-board {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:200%;
+	padding:20px;
+}
+.%css-ctar% .aiin-wheel1-circle {
+	position:relative;
+	width:80px;
+	height:80px;
+	background:#2ecc71;
+	border-radius:50%;
+}
+.%css-ctar% .aiin-btn:hover .aiin-wheel1-circle {
+	animation-name:%css-ctar%-kf-wheel1-circle-hover;
+	animation-iteration-count:1;
+	animation-duration:2s;
+}
+@keyframes %css-ctar%-kf-wheel1-circle-hover {
+	0% {
+		background:#2ecc71;
+	}
+	20% {
+		background:#66dc98;
+		animation-timing-function:ease-in;
+	}
+	100% {
+		background:#2ecc71;
+	}
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-wheel1-circle {
+	animation-name:%css-ctar%-kf-wheel1-circle-sel;
+	animation-iteration-count:1;
+	animation-duration:3s;
+}
+@keyframes %css-ctar%-kf-wheel1-circle-sel {
+	0% {
+		background:#2ecc71;
+	}
+	20% {
+		background:#8be0af;
+		animation-timing-function:ease-in;
+	}
+	100% {
+		background:#2ecc71;
+	}
+}
+.%css-ctar% .aiin-btn.aiin-init.aiin-sel .aiin-wheel1-circle {
+	animation-delay:-100000s;
+}
+.%css-ctar% .aiin-wheel1-starboard {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.%css-ctar% .aiin-btn:hover .aiin-wheel1-starboard {
+	animation-name:%css-ctar%-kf-wheel1-starboard-hover;
+	animation-iteration-count:1;
+	animation-duration:2s;
+}
+@keyframes %css-ctar%-kf-wheel1-starboard-hover {
+	0% {
+		transform:rotate(0deg);
+		animation-timing-function:ease-out;
+	}
+	20% {
+		transform:rotate(-45deg);
+		animation-timing-function:ease-in;
+	}
+	100% {
+		transform:rotate(0deg);
+	}
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-wheel1-starboard {
+	animation-name:%css-ctar%-kf-wheel1-starboard-sel;
+	animation-iteration-count:1;
+	animation-duration:3s;
+}
+@keyframes %css-ctar%-kf-wheel1-starboard-sel {
+	0% {
+		transform:rotate(0deg);
+		animation-timing-function:cubic-bezier(0,1.01,.44,.99);
+	}
+	100% {
+		transform:rotate(-1080deg);
+	}
+}
+.%css-ctar% .aiin-btn.aiin-init.aiin-sel .aiin-wheel1-starboard {
+	animation-delay:-100000s;
+}
+.%css-ctar% .aiin-wheel1-char {
+	position:absolute;
+	top:50px;
+	left:50px;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	color:#2ecc71;
+	font-weight:bold;
+	text-align:center;
+	font-size:11px;
+}
+.%css-ctar% .aiin-wheel1-char-1-1 {
+	transform:rotate(-19.8deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-1-2 {
+	transform:rotate(-1.8deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-1-3 {
+	transform:rotate(16.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-1-4 {
+	transform:rotate(34.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-2-1 {
+	transform:rotate(70.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-2-2 {
+	transform:rotate(88.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-2-3 {
+	transform:rotate(106.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-2-4 {
+	transform:rotate(124.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-3-1 {
+	transform:rotate(160.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-3-2 {
+	transform:rotate(178.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-3-3 {
+	transform:rotate(196.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-3-4 {
+	transform:rotate(214.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-4-1 {
+	transform:rotate(250.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-4-2 {
+	transform:rotate(268.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-4-3 {
+	transform:rotate(286.2deg) translateX(47.5px) rotate(90deg);
+}
+.%css-ctar% .aiin-wheel1-char-4-4 {
+	transform:rotate(304.2deg) translateX(47.5px) rotate(90deg);
+}
+/* filldiv */
+.%css-ctar% .aiin-filldiv1 {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+/* absline */
+.%css-ctar% .aiin-absline1 {
+	position:absolute;
+	left:0;
+	width:100%;
+	line-height:1;
+	top:26px;
+	height:16px;
+	text-align:center;
+}
+/* ipos:hcenter */
+.%css-ctar% .aiin-ipos1 {
+	position:relative;
+	display:inline-block;
+	width:auto;
+	height:100%;
+}
+.%css-ctar% .aiin-ipos1-space {
+	width:auto;
+	height:100%;
+}
+/* vmark */
+.%css-ctar% .aiin-vmstd1 {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	transition:opacity 1s, transform 1s;
+}
+.%css-ctar% .aiin-vmstd1-off {
+	background:url("%url-tpl%img/vmark-off.png");
+	background-size:100% 100%;
+	opacity:0.5;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-vmstd1-off {
+	opacity:0;
+}
+.%css-ctar% .aiin-vmstd1-on {
+	background:url("%url-tpl%img/vmark-on.png");
+	background-size:100% 100%;
+	opacity:0;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-vmstd1-on {
+	opacity:1;
+}
+/* vmark:action */
+.%css-ctar% .aiin-vmstd1-off {
+	transform:scale(1);
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-vmstd1-off {
+	transform:scale(0);
+}
+.%css-ctar% .aiin-vmstd1-on {
+	transform:scale(2);
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-vmstd1-on {
+	transform:scale(1);
+}
+/* absline */
+.%css-ctar% .aiin-absline2 {
+	position:absolute;
+	left:0;
+	width:100%;
+	line-height:1;
+	bottom:2px;
+	text-align:center;
+}
+.%css-ctar% .aiin-vcnt {
+	color:#fff;
+	font-size:10px;
+	font-weight:bold;
+}

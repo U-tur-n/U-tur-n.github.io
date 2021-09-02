@@ -1,0 +1,366 @@
+/* btn */
+.%css-ctar% .aiin-btn {
+	position:relative;
+	display:inline-block;
+	cursor:pointer;
+	user-select:none;
+	-moz-user-select:none;
+	-webkit-tap-highlight-color:transparent;
+	line-height:0;
+	width:120px;
+	height:120px;
+	font-size:12px;
+	background-color:white;
+	box-shadow:0 0 10px 0 black;
+}
+/* grid1:box */
+.%css-ctar% .aiin-grid1-box-group {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.%css-ctar% .aiin-grid1-box {
+	position:absolute;
+	width:25.000%;
+	height:25.000%;
+	overflow:hidden;
+	transition:transform 0.9s;
+
+	letter-spacing:0;
+	font-size:0;
+	line-height:0;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-grid1-box {
+	transform:rotateZ(0deg) translate(0,0);
+}
+@media (hover:hover), screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+	.%css-ctar% .aiin-btn:hover .aiin-grid1-box {
+		transform:rotateZ(0deg) translate(0,0);
+	}
+}
+.%css-ctar% .aiin-grid1-box-11 {
+	top:0%;
+	left:0%;
+	transform:rotateZ(360deg) translate(100%,100%);
+}
+.%css-ctar% .aiin-grid1-box-12 {
+	top:0%;
+	left:25%;
+	transform:rotateZ(360deg) translate(200%,100%);
+}
+.%css-ctar% .aiin-grid1-box-13 {
+	top:0%;
+	left:50%;
+	transform:rotateZ(360deg) translate(-100%,0%);
+}
+.%css-ctar% .aiin-grid1-box-14 {
+	top:0%;
+	left:75%;
+	transform:rotateZ(360deg) translate(-200%,200%);
+}
+.%css-ctar% .aiin-grid1-box-21 {
+	top:25%;
+	left:0%;
+	transform:rotateZ(360deg) translate(0%,200%);
+}
+.%css-ctar% .aiin-grid1-box-22 {
+	top:25%;
+	left:25%;
+	transform:rotateZ(360deg) translate(200%,200%);
+}
+.%css-ctar% .aiin-grid1-box-23 {
+	top:25%;
+	left:50%;
+	transform:rotateZ(360deg) translate(100%,100%);
+}
+.%css-ctar% .aiin-grid1-box-24 {
+	top:25%;
+	left:75%;
+	transform:rotateZ(360deg) translate(-200%,200%);
+}
+.%css-ctar% .aiin-grid1-box-31 {
+	top:50%;
+	left:0%;
+	transform:rotateZ(360deg) translate(0%,-100%);
+}
+.%css-ctar% .aiin-grid1-box-32 {
+	top:50%;
+	left:25%;
+	transform:rotateZ(360deg) translate(-100%,0%);
+}
+.%css-ctar% .aiin-grid1-box-33 {
+	top:50%;
+	left:50%;
+	transform:rotateZ(360deg) translate(0%,100%);
+}
+.%css-ctar% .aiin-grid1-box-34 {
+	top:50%;
+	left:75%;
+	transform:rotateZ(360deg) translate(-100%,-200%);
+}
+.%css-ctar% .aiin-grid1-box-41 {
+	top:75%;
+	left:0%;
+	transform:rotateZ(360deg) translate(200%,-200%);
+}
+.%css-ctar% .aiin-grid1-box-42 {
+	top:75%;
+	left:25%;
+	transform:rotateZ(360deg) translate(-100%,-300%);
+}
+.%css-ctar% .aiin-grid1-box-43 {
+	top:75%;
+	left:50%;
+	transform:rotateZ(360deg) translate(0%,-100%);
+}
+.%css-ctar% .aiin-grid1-box-44 {
+	top:75%;
+	left:75%;
+	transform:rotateZ(360deg) translate(0%,-300%);
+}
+/* grid1:pic */
+.%css-ctar% .aiin-grid1-pic-b,
+.%css-ctar% .aiin-grid1-pic-f {
+	position:absolute;
+	width:400%;
+	height:400%;
+	transition:opacity 0.9s;
+}
+.%css-ctar% .aiin-grid1-pic-b {
+	opacity:0;
+	background:url("%url-tpl%img/pic-b.jpg");
+	background-size:cover;
+	background-position:center center;
+}
+.%css-ctar% .aiin-grid1-pic-f {
+	opacity:1;
+	background:url("%url-tpl%img/pic-f.jpg");
+	background-size:cover;
+	background-position:center center;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-grid1-pic-b {
+	opacity:1;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-grid1-pic-f {
+	opacity:0;
+}
+@media (hover:hover), screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+	.%css-ctar% .aiin-btn:hover .aiin-grid1-pic-b {
+		opacity:1;
+	}
+	.%css-ctar% .aiin-btn:hover .aiin-grid1-pic-f {
+		opacity:0;
+	}
+}
+.%css-ctar% .aiin-grid1-box-11 .aiin-grid1-pic-b {
+	top:0%;
+	left:0%;
+}
+.%css-ctar% .aiin-grid1-box-11 .aiin-grid1-pic-f {
+	top:-100%;
+	left:-100%;
+}
+.%css-ctar% .aiin-grid1-box-12 .aiin-grid1-pic-b {
+	top:0%;
+	left:-100%;
+}
+.%css-ctar% .aiin-grid1-box-12 .aiin-grid1-pic-f {
+	top:-100%;
+	left:-300%;
+}
+.%css-ctar% .aiin-grid1-box-13 .aiin-grid1-pic-b {
+	top:0%;
+	left:-200%;
+}
+.%css-ctar% .aiin-grid1-box-13 .aiin-grid1-pic-f {
+	top:0%;
+	left:-100%;
+}
+.%css-ctar% .aiin-grid1-box-14 .aiin-grid1-pic-b {
+	top:0%;
+	left:-300%;
+}
+.%css-ctar% .aiin-grid1-box-14 .aiin-grid1-pic-f {
+	top:-200%;
+	left:-100%;
+}
+.%css-ctar% .aiin-grid1-box-21 .aiin-grid1-pic-b {
+	top:-100%;
+	left:0%;
+}
+.%css-ctar% .aiin-grid1-box-21 .aiin-grid1-pic-f {
+	top:-300%;
+	left:0%;
+}
+.%css-ctar% .aiin-grid1-box-22 .aiin-grid1-pic-b {
+	top:-100%;
+	left:-100%;
+}
+.%css-ctar% .aiin-grid1-box-22 .aiin-grid1-pic-f {
+	top:-300%;
+	left:-300%;
+}
+.%css-ctar% .aiin-grid1-box-23 .aiin-grid1-pic-b {
+	top:-100%;
+	left:-200%;
+}
+.%css-ctar% .aiin-grid1-box-23 .aiin-grid1-pic-f {
+	top:-200%;
+	left:-300%;
+}
+.%css-ctar% .aiin-grid1-box-24 .aiin-grid1-pic-b {
+	top:-100%;
+	left:-300%;
+}
+.%css-ctar% .aiin-grid1-box-24 .aiin-grid1-pic-f {
+	top:-300%;
+	left:-100%;
+}
+.%css-ctar% .aiin-grid1-box-31 .aiin-grid1-pic-b {
+	top:-200%;
+	left:0%;
+}
+.%css-ctar% .aiin-grid1-box-31 .aiin-grid1-pic-f {
+	top:-100%;
+	left:0%;
+}
+.%css-ctar% .aiin-grid1-box-32 .aiin-grid1-pic-b {
+	top:-200%;
+	left:-100%;
+}
+.%css-ctar% .aiin-grid1-box-32 .aiin-grid1-pic-f {
+	top:-200%;
+	left:0%;
+}
+.%css-ctar% .aiin-grid1-box-33 .aiin-grid1-pic-b {
+	top:-200%;
+	left:-200%;
+}
+.%css-ctar% .aiin-grid1-box-33 .aiin-grid1-pic-f {
+	top:-300%;
+	left:-200%;
+}
+.%css-ctar% .aiin-grid1-box-34 .aiin-grid1-pic-b {
+	top:-200%;
+	left:-300%;
+}
+.%css-ctar% .aiin-grid1-box-34 .aiin-grid1-pic-f {
+	top:0%;
+	left:-200%;
+}
+.%css-ctar% .aiin-grid1-box-41 .aiin-grid1-pic-b {
+	top:-300%;
+	left:0%;
+}
+.%css-ctar% .aiin-grid1-box-41 .aiin-grid1-pic-f {
+	top:-100%;
+	left:-200%;
+}
+.%css-ctar% .aiin-grid1-box-42 .aiin-grid1-pic-b {
+	top:-300%;
+	left:-100%;
+}
+.%css-ctar% .aiin-grid1-box-42 .aiin-grid1-pic-f {
+	top:0%;
+	left:0%;
+}
+.%css-ctar% .aiin-grid1-box-43 .aiin-grid1-pic-b {
+	top:-300%;
+	left:-200%;
+}
+.%css-ctar% .aiin-grid1-box-43 .aiin-grid1-pic-f {
+	top:-200%;
+	left:-200%;
+}
+.%css-ctar% .aiin-grid1-box-44 .aiin-grid1-pic-b {
+	top:-300%;
+	left:-300%;
+}
+.%css-ctar% .aiin-grid1-box-44 .aiin-grid1-pic-f {
+	top:0%;
+	left:-300%;
+}
+.%css-ctar% .aiin-filldiv1 {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color:rgba(0,0,0,0);
+}
+.%css-ctar% .aiin-absline1 {
+	position:absolute;
+	left:0;
+	width:100%;
+	line-height:1;
+	top:3%;
+	text-align:left;
+}
+.%css-ctar% .aiin-label {
+	padding:0 4px;
+	color:white;
+	font-weight:bold;
+	text-shadow:0 0 2px #000;
+}
+.%css-ctar% .aiin-absline2 {
+	position:absolute;
+	left:0;
+	width:100%;
+	line-height:1;
+	bottom:3%;
+	text-align:right;
+}
+.%css-ctar% .aiin-vcnt {
+	padding:0 4px;
+	color:white;
+	font-weight:bold;
+	text-shadow:0 0 2px #000;
+}
+.%css-ctar% .aiin-ipos1 {
+	position:absolute;
+	width:14px;
+	height:14px;
+	top:3.5%;
+	right:5%;
+}
+/* vmark */
+.%css-ctar% .aiin-vm-heart1 {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	transition:opacity 1s, transform 1s;
+}
+.%css-ctar% .aiin-vm-heart1-off {
+	background:url("%url-tpl%img/vmark-off.png");
+	background-size:100% 100%;
+	opacity:0.8;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-vm-heart1-off {
+	opacity:0;
+}
+.%css-ctar% .aiin-vm-heart1-on {
+	background:url("%url-tpl%img/vmark-on.png");
+	background-size:100% 100%;
+	opacity:0;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-vm-heart1-on {
+	opacity:1;
+}
+/* action */
+.%css-ctar% .aiin-vm-heart1-off {
+	transform:rotateZ(0);
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-vm-heart1-off {
+	transform:rotateZ(360deg);
+}
+.%css-ctar% .aiin-vm-heart1-on {
+	transform:rotateZ(-360deg);
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-vm-heart1-on {
+	transform:rotateZ(0);
+}

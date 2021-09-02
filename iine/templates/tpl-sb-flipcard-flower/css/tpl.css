@@ -1,0 +1,148 @@
+/* btn */
+.%css-ctar% .aiin-btn {
+	position:relative;
+	display:inline-block;
+	cursor:pointer;
+	user-select:none;
+	-moz-user-select:none;
+	-webkit-tap-highlight-color:transparent;
+	line-height:0;
+}
+/* reldiv */
+.%css-ctar% .aiin-reldiv1 {
+	position:relative;
+	width:150px;
+	height:150px;
+}
+/* flip */
+.%css-ctar% .aiin-flip1-wrapper {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	perspective:300px;
+}
+.%css-ctar% .aiin-flip1-face {
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	transition:transform 1s;
+	transform-style:preserve-3d;
+	backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+}
+.%css-ctar% .aiin-flip1-face-front {
+	background:url("%url-tpl%img/front.jpg");
+	background-size:cover;
+	transform:rotateY(0deg);
+}
+.%css-ctar% .aiin-flip1-face-back {
+	background:url("%url-tpl%img/back.jpg");
+	background-size:cover;
+	transform:rotateY(-180deg);
+}
+.%css-ctar% .aiin-btn:hover .aiin-flip1-face-front {
+	transform:rotateY(180deg);
+}
+.%css-ctar% .aiin-btn:hover .aiin-flip1-face-back {
+	transform:rotateY(0deg);
+}
+.%css-ctar% .aiin-filldiv1 {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+.%css-ctar% .aiin-absline1 {
+	position:absolute;
+	left:0;
+	width:100%;
+	line-height:1;
+	top:5px;
+	text-align:left;
+}
+/* swing */
+.%css-ctar% .aiin-swing1-swing {
+	display:inline-block;
+	position:relative;
+	transition:left 1s,transform 1s;
+}
+.%css-ctar% .aiin-swing1-swing {
+	left:100%;
+	transform:translate(-100%);
+}
+.%css-ctar% .aiin-btn:hover .aiin-swing1-swing {
+	left:0%;
+	transform:translate(0%);
+}
+.%css-ctar% .aiin-span1 {
+	padding:0 6px;
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+}
+.%css-ctar% .aiin-absline2 {
+	position:absolute;
+	left:0;
+	width:100%;
+	line-height:1;
+	bottom:5px;
+	text-align:left;
+}
+/* swing */
+.%css-ctar% .aiin-swing2-swing {
+	display:inline-block;
+	position:relative;
+	transition:left 1s,transform 1s;
+}
+.%css-ctar% .aiin-swing2-swing {
+	left:0%;
+	transform:translate(0%);
+}
+.%css-ctar% .aiin-btn:hover .aiin-swing2-swing {
+	left:100%;
+	transform:translate(-100%);
+}
+.%css-ctar% .aiin-vcnt {
+	padding:0 6px;
+	color:#fff;
+	font-size:11px;
+	font-weight:bold;
+}
+/* ipos:hvcenter */
+.%css-ctar% .aiin-ipos1 {
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:45px;
+	height:45px;
+}
+/* vmark */
+.%css-ctar% .aiin-vmstd1 {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	transition:opacity 1s, transform 1s;
+}
+.%css-ctar% .aiin-vmstd1-on {
+	background:url("%url-tpl%img/vmark-on.png");
+	background-size:100% 100%;
+	opacity:0;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-vmstd1-on {
+	opacity:0.4;
+}
+/* vmark:action */
+.%css-ctar% .aiin-vmstd1-on {
+	transform:scale(1);
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-vmstd1-on {
+	transform:scale(1);
+}

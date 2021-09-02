@@ -1,0 +1,150 @@
+/* btn */
+.%css-ctar% .aiin-btn {
+	position:relative;
+	display:inline-block;
+	cursor:pointer;
+	user-select:none;
+	-moz-user-select:none;
+	-webkit-tap-highlight-color:transparent;
+	line-height:0;
+}
+/* reldiv */
+.%css-ctar% .aiin-reldiv1 {
+	position:relative;
+	width:200px;
+	height:120px;
+	background:url("%url-tpl%img/bg.jpg");
+}
+/* haiku-scrolling */
+.%css-ctar% .aiin-haiku-scrolling1-screen {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:80%;
+	overflow:hidden;
+}
+.%css-ctar% .aiin-haiku-scrolling1-contents {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	padding:10px;
+	color:white;
+	text-align:left;
+	line-height:1.6;
+	letter-spacing:0.1em;
+	text-shadow:1px 1px 1px #888;
+}
+.%css-ctar% .aiin-btn:hover .aiin-haiku-scrolling1-contents,
+.%css-ctar% .aiin-btn.aiin-sel .aiin-haiku-scrolling1-contents {
+	animation-name:%css-ctar%-kf-haiku-scrolling1-contents-hover;
+	animation-iteration-count:1;
+	animation-timing-function:linear;
+	animation-duration:20s;
+}
+@keyframes %css-ctar%-kf-haiku-scrolling1-contents-hover {
+	0% {
+		transform:translateY(0%);
+	}
+	80% {
+		transform:translateY(-100%);
+	}
+	80.00001% {
+		transform:translateY(100px);
+	}
+}
+.%css-ctar% .aiin-btn.aiin-init.aiin-sel .aiin-haiku-scrolling1-contents {
+	animation-delay:-10000s;
+}
+.%css-ctar% .aiin-haiku-scrolling1-song {
+	margin-bottom:100px;
+}
+.%css-ctar% .aiin-haiku-scrolling1-song:last-child {
+	margin-bottom:0px;
+}
+.%css-ctar% .aiin-haiku-scrolling1-words {
+	margin-bottom:10px;
+	color:#fff;
+}
+.%css-ctar% .aiin-haiku-scrolling1-author {
+	margin-left:30px;
+	color:#fff;
+}
+.%css-ctar% .aiin-haiku-scrolling1-panel {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:20%;
+	background:rgba(0,0,0,0.4);
+	overflow:hidden;
+}
+.%css-ctar% .aiin-haiku-scrolling1-table {
+	display:table;
+	width:100%;
+	height:100%;
+}
+.%css-ctar% .aiin-haiku-scrolling1-tcell {
+	display:table-cell;
+	height:100%;
+	font-size:15px;
+	line-height:1;
+	vertical-align:middle;
+}
+.%css-ctar% .aiin-haiku-scrolling1-tcell-label {
+	text-align:right;
+	padding-right:8px;
+	font-size:12px;
+}
+.%css-ctar% .aiin-label {
+	height:15px;
+	width:auto;
+	vertical-align:middle;
+}
+.%css-ctar% .aiin-btn:hover .aiin-label,
+.%css-ctar% .aiin-btn.aiin-sel .aiin-label {
+	animation-name:%css-ctar%-kf-haiku-scrolling1-label-hover;
+	animation-iteration-count:20;
+	animation-timing-function:ease;
+	animation-duration:1s;
+}
+@keyframes %css-ctar%-kf-haiku-scrolling1-label-hover {
+	0% {
+		transform:translateX(0);
+	}
+	50% {
+		transform:translateX(-4px);
+	}
+	100% {
+		transform:translateX(0);
+	}
+}
+.%css-ctar% .aiin-btn.aiin-init.aiin-sel .aiin-label {
+	animation-delay:-10000s;
+}
+.%css-ctar% .aiin-vcnt {
+	position:relative;
+	top:1px;
+	color:#f88;
+	font-size:11px;
+	font-weight:bold;
+	vertical-align:middle;
+}
+.%css-ctar% .aiin-haiku-scrolling1-tcell-vmark {
+	text-align:left;
+	padding-left:8px;
+}
+.%css-ctar% .aiin-haiku-scrolling1-vmark {
+	position:relative;
+	height:15px;
+	width:auto;
+	vertical-align:middle;
+	opacity:0;
+	transition:opacity 0.6s, left 0.6s linear;
+	left:-20px;
+}
+.%css-ctar% .aiin-btn.aiin-sel .aiin-haiku-scrolling1-vmark {
+	opacity:1;
+	left:0;
+}

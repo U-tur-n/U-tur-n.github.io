@@ -1,0 +1,65 @@
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_btn`
+--
+
+CREATE TABLE `tbl_btn` (
+  `btn_id` int(11) NOT NULL AUTO_INCREMENT,
+  `poll_id` int(11) NOT NULL DEFAULT '0',
+  `bid` varchar(100) DEFAULT NULL,
+  `vcnt` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`btn_id`),
+  KEY `poll_id` (`poll_id`),
+  KEY `bid` (`bid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1001;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_hist`
+--
+
+CREATE TABLE `tbl_hist` (
+  `hist_id` int(11) NOT NULL AUTO_INCREMENT,
+  `dt_create` datetime NOT NULL,
+  `voter_id` int(11) NOT NULL,
+  `poll_id` int(11) NOT NULL,
+  `bid` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`hist_id`),
+  KEY `dt_create` (`dt_create`),
+  KEY `voter_id` (`voter_id`),
+  KEY `poll_id` (`poll_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1001;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_poll`
+--
+
+CREATE TABLE `tbl_poll` (
+  `poll_id` int(11) NOT NULL AUTO_INCREMENT,
+  `dt_create` datetime NOT NULL,
+  `pid` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`poll_id`),
+  KEY `pid` (`pid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1001;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_voter`
+--
+
+CREATE TABLE `tbl_voter` (
+  `voter_id` int(11) NOT NULL AUTO_INCREMENT,
+  `dt_create` datetime NOT NULL,
+  `ipsig` varchar(100) DEFAULT NULL,
+  `cksig` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`voter_id`),
+  KEY `dt_create` (`dt_create`),
+  KEY `ipsig` (`ipsig`),
+  KEY `cksig` (`cksig`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1001;
+
